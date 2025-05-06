@@ -14,7 +14,7 @@ import {
 // import { HamburgerIcon } from "@chakra-ui/icons";
 // import ThemeToggleButton from "./theme-toggle-button";
 // import { IoLogoGithub } from "react-icons/io5";
-// If you meant to use a config object but never set it…
+
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href;
@@ -34,3 +34,27 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
     </Link>
   );
 };
+
+const Navbar = props => {
+  // Pull the current path from props (useful for highlighting active links)
+  const { path } = props;
+
+  return (
+    <Box
+      as="nav" // semantic <nav> element
+      position="fixed" // stick to the top
+      top={0} // align at the very top
+      w="100%" // full viewport width
+      bg={useColorModeValue('#ffffff40', '#20202380')} // semi-transparent white in light mode, transparent in dark
+      zIndex={1} // sit above page content
+      {...props}
+    >
+    <Container display ="flex" p>
+
+    </Container>
+    </Box>
+  );
+};
+
+export default Navbar;
+
