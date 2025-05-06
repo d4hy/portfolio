@@ -8,7 +8,7 @@ import Layout from '../components/layouts/main';
 
 // 3) This is the “custom App” component Next.js uses to initialize pages.
 //    By default Next.js will render <App> around every page.
-function Website({ Component, pageProps, router }) {
+const Website= ({ Component, pageProps, router }) => {
   return (
     // 4) Wrap the entire app in ChakraProvider so all pages/components
     //    can use Chakra’s theme, color mode, and style props.

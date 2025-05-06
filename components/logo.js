@@ -6,6 +6,7 @@ import Image from "next/image";
 
 // Import Chakra UI’s Text component for styled text and
 // the useColorModeValue custom  hook for theming based on light/dark mode
+
 import { Text, useColorModeValue } from "@chakra-ui/react";
 
 // Import Emotion’s `styled` helper to create styled React components
