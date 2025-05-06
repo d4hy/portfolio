@@ -1,0 +1,21 @@
+{
+    "root": true,
+    // ⬆️ Marks this folder as the “root” of your ESLint config;
+    //     ESLint won’t look any higher (in parent dirs) for other configs.
+  
+    "extends": "next",
+    // ⬆️ Inherit all of Next.js’s recommended ESLint rules (the `eslint-config-next` preset).
+  
+    "rules": {
+      // ⬇️ Here you can override or add specific rules on top of the “next” preset:
+  
+      "no-unused-vars": [
+        "error",           // Turn the “no-unused-vars” rule into an error (instead of warning or off)
+        {
+          "argsIgnorePattern": "^_",  // Don’t error on unused function arguments whose name starts with “_”
+          "varsIgnorePattern": "^_"   // Don’t error on unused variables whose name starts with “_”
+        }
+      ]
+    }
+  }
+  
